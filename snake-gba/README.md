@@ -1,16 +1,19 @@
-# `gba`
+# `snake-gba`
 
-# [Docs.rs Documentation](https://docs.rs/gba)
+This is a simple snake game for the Gameboy Advance. It was written in Rust and leans on the gba crate for GBA-specific functionality.
 
-This crate is intended for working with the GBA.
+## Building
 
-To build for the GBA you'll need to use `build-std` and you'll also need to
-activate the `compiler-builtins-weak-intrinsics` feature.
+`cargo build --release`
 
-The following should be somewhere in your `.cargo/config.toml`:
+## Building to ROM file (.gba)
 
-```toml
-[unstable]
-build-std = ["core"]
-build-std-features = ["compiler-builtins-weak-intrinsics"]
-```
+`./release-rom.sh`
+
+## Running
+This project uses the `mgba-qt` emulator. You can run the game with
+
+`cargo run`
+
+Please visit https://mgba.io/ for more information on how to install the emulator on your target platform.
+
