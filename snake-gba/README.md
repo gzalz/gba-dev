@@ -2,6 +2,10 @@
 
 This is a simple snake game for the Gameboy Advance. It was written in Rust and leans on the gba crate for GBA-specific functionality.
 
+## Running Pre-Compiled ROM
+
+A pre-compiled ROM, `snake.gba`, is available in the `rom` directory. You can run this ROM on your GBA emulator or hardware.
+
 ## Building
 
 `cargo build --release`
@@ -11,6 +15,7 @@ This is a simple snake game for the Gameboy Advance. It was written in Rust and 
 `./release-rom.sh`
 
 ## Running
+
 This project uses the `mgba-qt` emulator. You can run the game with
 
 `cargo run`
