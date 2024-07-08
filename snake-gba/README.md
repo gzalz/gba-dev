@@ -6,7 +6,7 @@ This is a simple snake game for the Gameboy Advance. It was written in Rust and 
 
 ## Running Pre-Compiled ROM
 
-A pre-compiled ROM, `snake.gba`, is available in the `rom` directory. You can run this ROM on your GBA emulator or hardware.
+A pre-compiled ROM, `snake.gba`, is available in the `rom` directory. You can run this ROM on your favorite GBA emulator. I have yet to test on real hardware.
 
 ## Building
 
