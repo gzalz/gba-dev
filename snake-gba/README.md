@@ -2,7 +2,7 @@
 
 ![image info](./img/snake.png)
 
-This is a simple snake game for the Gameboy Advance. It was written in Rust and leans on the gba crate for GBA-specific functionality.
+This is a simple snake game for the Gameboy Advance. It was written in Rust and leans on the `gba` crate for GBA-specific functionality.
 
 ## Running Pre-Compiled ROM
 
