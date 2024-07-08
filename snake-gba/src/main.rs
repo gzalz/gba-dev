@@ -1,7 +1,6 @@
 #![no_std]
 #![no_main]
 
-use core::cell::Cell;
 use gba::{
   prelude::*,
   random::{Gen32, Lcg32},
