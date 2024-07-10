@@ -180,16 +180,28 @@ extern "C" fn main() -> ! {
     OBJ_ATTR_ALL.index(FOOD_OBJECT_OFFSET).write(obj);
 
     if keys.up() {
-      direction = DIR::UP;
+        match direction {
+          DIR::DOWN => {}
+          _ => direction = DIR::UP,
+        }
     }
     if keys.down() {
-      direction = DIR::DOWN;
+        match direction {
+            DIR::UP => {}
+            _ => direction = DIR::DOWN,
+        }
     }
     if keys.left() {
-      direction = DIR::LEFT;
+      match direction {
+        DIR::RIGHT => {}
+        _ => direction = DIR::LEFT,
+      }
     }
-    if keys.right() {
-      direction = DIR::RIGHT;
+    if keys.right(){
+      match direction {
+        DIR::LEFT => {}
+        _ => direction = DIR::RIGHT,
+      }
     }
 
     match direction {
