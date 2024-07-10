@@ -1,12 +1,12 @@
 # `snake-gba`
 
-![image info](./img/snake.png)
+![image info](./img/keyboard-interface.png)
 
-This is a simple snake game for the Gameboy Advance. It was written in Rust and leans on the `gba` crate for GBA-specific functionality.
+This is a simple keyboard interface for the Gameboy Advance. It was written in Rust and leans on the `gba` crate for GBA-specific functionality.
 
 ## Running Pre-Compiled ROM
 
-A pre-compiled ROM, `snake.gba`, is available in the `rom` directory. You can run this ROM on your favorite GBA emulator. I have yet to test on real hardware.
+A pre-compiled ROM, `keyboard-interface.gba`, is available in the `rom` directory. You can run this ROM on your favorite GBA emulator. I have yet to test on real hardware.
 
 ## Building
 
@@ -24,8 +24,3 @@ This project uses the `mgba-qt` emulator. You can run the game with
 
 Please visit https://mgba.io/ for more information on how to install the emulator on your target platform.
 
-## Known Issues
-
-After a certain length of snake the game will reset without erasing the tail of the snake. In certain emulators the game will continue, however the tail will not grow after resetting. On mgba-qt I have observed the game crashing.
-
-This will be addressed in a future update.
