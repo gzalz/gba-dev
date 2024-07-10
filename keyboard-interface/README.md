@@ -1,4 +1,4 @@
-# `snake-gba`
+# `keyboard-interface`
 
 ![image info](./img/keyboard-interface.png)
 
