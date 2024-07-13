@@ -467,7 +467,7 @@ extern "C" fn main() -> ! {
                 break;
             }
             if PENDING_WRITES[WRITE_INDEX.read() as usize+1].read() != 0 {
-                world[(WRITE_INDEX.read() as usize) / 32][WRITE_INDEX.read() as usize % 32] = PENDING_WRITES[WRITE_INDEX.read() as usize].read();
+                world[((WRITE_INDEX.read() as usize) / 30)+15][(WRITE_INDEX.read() as usize % 30)] = PENDING_WRITES[WRITE_INDEX.read() as usize].read();
                 PENDING_WRITES[WRITE_INDEX.read() as usize].write(0);
                 WRITE_INDEX.write(WRITE_INDEX.read()+1);
                 OUTPUT_CHANGED.write(true);
