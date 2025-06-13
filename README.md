@@ -6,7 +6,7 @@ Projects within this repository compile to the `thumbv4t-none-eabi` target.
 ## Requirements
 - [Rust](https://www.rust-lang.org/tools/install)
 - [mGBA-qt](https://mgba.io/downloads.html)
+- [ARM GNU Toolchain](https://developer.arm.com/downloads/-/gnu-rm)
 
 ## Projects
-- [snake-gba](./snake-gba/README.md)
-- [keyboard-interface](./keyboard-interface/README.md)
+- [asteroids](./asteroids/README.md)
