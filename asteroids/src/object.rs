@@ -29,6 +29,12 @@ impl Object {
     OBJ_ATTR_ALL.index(self.index).write(self.attr)
   }
 
+  pub fn set_tile_id(&mut self, tile_id: u16) {
+    self.tile_id = tile_id;
+    self.attr.set_tile_id(tile_id);
+    self.write();
+  }
+
   pub fn set_palbank(&mut self, palbank: u16) {
     self.palbank = palbank;
     self.attr.set_palbank(palbank);

@@ -7,7 +7,7 @@ pub fn init() {
 
   BG_PALETTE.index(1).write(Color::WHITE);
   let colors =
-    [Color::GREEN, Color::WHITE, Color::RED, Color::BLUE, Color::YELLOW];
+    [Color::BLACK, Color::WHITE, Color::RED, Color::BLUE, Color::YELLOW];
   for (pal, color) in colors.iter().enumerate() {
     obj_palbank(pal).index(1).write(*color);
   }
